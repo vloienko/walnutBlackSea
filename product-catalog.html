@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230525184505"/>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css?_v=20230525184505"/>
+   <link rel="stylesheet" href="css/style.min.css?_v=20230525184505">
+   <title>Сторінка</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+   <div class="header__panel">
+      <div class="container">
+         <div class="header__panel-wrapper">
+            <div class="phone mobile">
+               <a class="phone__link" href="tel:+380447505011">
+                  <svg class='phone__img'>
+                     <use xlink:href='img/sprite.svg#tel'></use>
+                  </svg>
+                  <span>+38 (044)</span> 750-50-11
+               </a>
+            </div>
+            <button class="header__button button-green mobile">Заказать звонок</button>
+
+            <div class="social mobile">
+               <a class="social__link" href="#">
+                  <svg class='social__img'>
+                     <use xlink:href='img/sprite.svg#facebook'></use>
+                  </svg>
+               </a>
+               <a class="social__link" href="#">
+                  <svg class='social__img'>
+                     <use xlink:href='img/sprite.svg#instagram'></use>
+                  </svg>
+               </a>
+               <a class="social__link" href="#">
+                  <svg class='social__img youtube'>
+                     <use xlink:href='img/sprite.svg#youtube'></use>
+                  </svg>
+               </a>
+            </div>
+            <div class="header__content-box">
+               <a class="header__discount" href="#">
+                  Ваша персональная скидка - 5%
+               </a>
+               <div class="header__box">
+                  <div class="header__authorization">
+                     <a class="header__authorization-link" href="#">
+                        <svg>
+                           <use xlink:href='img/sprite.svg#user'></use>
+                        </svg>
+                        <span>Вход</span>
+                     </a>
+                     <a class="header__authorization-link" href="#">
+                        <span>Регистрация</span>
+                     </a>
+                  </div>
+                  <div class="header__language">
+                     <span class="header__language-current">Ru</span>
+                     <ul class="header__language-list">
+                        <li class="header__language-item" data-lang="Ru">Ru</li>
+                        <li class="header__language-item" data-lang="Ua">Ua</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="header__contact">
+      <div class="container">
+         <div class="header__contact-wrapper">
+            <div class="header__holder">
+               <a class="logo adaptive" href="#">
+                  <img src="img/logo.png" alt="Logo">
+                  <span>ОРЕХ <br> ПРИЧЕРНОМОРЬЯ</span>
+               </a>
+               <div class="menu__icon">
+                  <span></span>
+               </div>
+            </div>
+            <div class="header__block">
+               <div class="header__block-box">
+                  <div class="messengers">
+                     <a class="messengers__link" href="#">
+                        <svg class='messengers__img'>
+                           <use xlink:href='img/sprite.svg#viber'></use>
+                        </svg>
+                     </a>
+                     <a class="messengers__link" href="#">
+                        <svg class='messengers__img telegram'>
+                           <use xlink:href='img/sprite.svg#telegram'></use>
+                        </svg>
+                     </a>
+                     <a class="messengers__link" href="#">
+                        <svg class='messengers__img whatsapp'>
+                           <use xlink:href='img/sprite.svg#whatsapp'></use>
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="phone">
+                     <a class="phone__link" href="tel:+380447505011">
+                        <span>+38 (044)</span> 750-50-11
+                     </a>
+                     <a class="phone__link" href="tel:+380977755051">
+                        <span>+38 (097)</span> 775-50-51
+                     </a>
+                  </div>
+               </div>
+               <div class="header__block-call">
+                  <button class="header__button button-green">Заказать звонок</button>
+                  <span>Ждем Вашего звонка ежедневно с 9 до 18</span>
+               </div>
+               <button class="header__basket">
+                  <svg>
+                     <use xlink:href='img/sprite.svg#basket'></use>
+                  </svg>
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="header__body">
+      <div class="container">
+         <div class="header__menu menu">
+            <nav class="menu__body">
+               <div class="header__menu-white">
+                  <a class="logo mobile-menu" href="#">
+                     <img src="img/logo.png" alt="Logo">
+                     <span>ОРЕХ <br> ПРИЧЕРНОМОРЬЯ</span>
+                  </a>
+                  <div class="header__block-box mobile-menu">
+                     <div class="messengers">
+                        <a class="messengers__link" href="#">
+                           <svg class='messengers__img'>
+                              <use xlink:href='img/sprite.svg#viber'></use>
+                           </svg>
+                        </a>
+                        <a class="messengers__link" href="#">
+                           <svg class='messengers__img telegram'>
+                              <use xlink:href='img/sprite.svg#telegram'></use>
+                           </svg>
+                        </a>
+                        <a class="messengers__link" href="#">
+                           <svg class='messengers__img whatsapp'>
+                              <use xlink:href='img/sprite.svg#whatsapp'></use>
+                           </svg>
+                        </a>
+                     </div>
+                     <div class="phone">
+                        <a class="phone__link" href="tel:+380447505011">
+                           <span>+38 (044)</span> 750-50-11
+                        </a>
+                        <a class="phone__link" href="tel:+380977755051">
+                           <span>+38 (097)</span> 775-50-51
+                        </a>
+                     </div>
+                  </div>
+                  <div class="menu__icon close">
+                     <span></span>
+                  </div>
+               </div>
+               <div class="header__menu-gray">
+                  <div class="header__authorization mobile-menu">
+                     <a class="header__authorization-link" href="#">
+                        <svg>
+                           <use xlink:href='img/sprite.svg#user'></use>
+                        </svg>
+                        <span>Вход</span>
+                     </a>
+                     <a class="header__authorization-link" href="#">
+                        <span>Регистрация</span>
+                     </a>
+                  </div>
+                  <div class="social mobile-menu">
+                     <a class="social__link" href="#">
+                        <svg class='social__img'>
+                           <use xlink:href='img/sprite.svg#facebook'></use>
+                        </svg>
+                     </a>
+                     <a class="social__link" href="#">
+                        <svg class='social__img'>
+                           <use xlink:href='img/sprite.svg#instagram'></use>
+                        </svg>
+                     </a>
+                     <a class="social__link" href="#">
+                        <svg class='social__img youtube'>
+                           <use xlink:href='img/sprite.svg#youtube'></use>
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+               <ul class="menu__list">
+                  <li><a class="menu__link active" href="#">Магазин</a></li>
+                  <li><a class="menu__link" href="#">О производстве</a></li>
+                  <li><a class="menu__link" href="#">Оплата и доставка</a></li>
+                  <li><a class="menu__link" href="#">Оптовым и корпоративным клиентам</a></li>
+                  <li><a class="menu__link" href="#">Новости и статьи</a></li>
+                  <li><a class="menu__link" href="#">Контакты</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </div>
+</header>
+
+		<main class="main">
+			<div class="breadcrumbs">
+				<div class="breadcrumbs__body">
+					<a class="breadcrumbs__main" href="index.html">Главная</a>
+					<svg class='breadcrumbs__arrow'>
+						<use xlink:href='img/sprite.svg#swiper-arrow'></use>
+					</svg>
+					<a class="breadcrumbs__current" href="#">Магазин</a>
+				</div>
+			</div>
+
+			<section class="store">
+				<div class="store__main-bg">
+					<div class="container">
+						<h1 class="store__title h1-title">Каталог продукции</h1>
+					</div>
+				</div>
+
+				<div class="store__wrapper">
+					<div class="container">
+						<div class="store__body">
+							<form class="filter">
+								<div class="filter__block">
+									<button class="filter__settings" type="button">
+										<span>Фильтр</span>
+										<img src="img/icon/filter-settings.svg" alt="Settings">
+									</button>
+
+									<div class="filter__select-box">
+										<div class="dropdown">
+											<button class="dropdown__button taste" type="button">Вкус</button>
+											<ul class="dropdown__list">
+												<li class="dropdown__list-item" data-value="1">Классический</li>
+												<li class="dropdown__list-item" data-value="2">Сладкий</li>
+												<li class="dropdown__list-item" data-value="3">Cоленый</li>
+											</ul>
+											<input class="dropdown__input-hidden" type="text" value="">
+										</div>
+
+										<div class="dropdown">
+											<button class="dropdown__button mass" type="button">Масса</button>
+											<ul class="dropdown__list">
+												<li class="dropdown__list-item" data-value="1">40г.</li>
+												<li class="dropdown__list-item" data-value="2">100г.</li>
+												<li class="dropdown__list-item" data-value="3">200г.</li>
+											</ul>
+											<input class="dropdown__input-hidden" type="text" value="">
+										</div>
+									</div>
+
+									<button class="filter__cost" type="button">
+										<span>Стоимость</span>
+										<div class="filter__cost-box">
+											<svg class='bottom'>
+												<use xlink:href='img/sprite.svg#filter-arrow'></use>
+											</svg>
+											<svg class='top'>
+												<use xlink:href='img/sprite.svg#filter-arrow'></use>
+											</svg>
+										</div>
+									</button>
+								</div>
+
+								<div class="filter__button-box">
+									<button class="filter__apply button-green" type="button">Применить</button>
+									<button class="filter__close" type="reset">
+										<svg>
+											<use xlink:href='img/sprite.svg#filter-close'></use>
+										</svg>
+										<span>Сбросить</span>
+									</button>
+								</div>
+							</form>
+							<div class="shop__swiper catalog__swiper swiper">
+   <div class="shop__wrapper catalog__wrapper swiper-wrapper">
+      <div class="swiper-slide">
+			<div class="product">
+   <div class="product__content">
+      <div class="product__sticker">
+         <div class="product__sticker-box">
+            <svg class="red">
+               <use xlink:href='img/sprite.svg#sticker'></use>
+            </svg>
+            <span class="red">АКЦИЯ</span>
+         </div>
+      </div>
+
+      <div class="product__swiper swiper">
+         <div class="product__wrapper swiper-wrapper">
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-1.png"
+                     alt="Walnut">
+               </div>
+            </div>
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-1.png"
+                     alt="Walnut">
+               </div>
+            </div>
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-1.png"
+                     alt="Walnut">
+               </div>
+            </div>
+         </div>
+         <svg class='product__arrow product-next swiper-button-next'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+         <svg class='product__arrow product-prev swiper-button-prev'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+      </div>
+   </div>
+   <div class="product__info">
+      <div class="product__descr">
+         <div class="product__holder">
+            <a class="product__holder-name" href="#">Грецкий орех</a>
+            <a class="product__holder-art" href="#">Арт: 0091</a>
+            <p>Орех сладкий, классический, очищенный</p>
+         </div>
+         <div class="product__block">
+            <div class="product__box">
+               <svg class="balance">
+                  <use xlink:href='img/sprite.svg#balance'></use>
+               </svg>
+               <div class="product__box-wrap">
+                  <p>Масса:</p>
+                  <span>40г.</span>
+               </div>
+            </div>
+            <div class="product__box">
+               <svg class="package">
+                  <use xlink:href='img/sprite.svg#package'></use>
+               </svg>
+               <div class="product__box-wrap">
+                  <p>Упаковка</p>
+                  <span>вакуумная</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="product__purchase">
+         <div class="product__price">
+            <p>Цена:</p>
+            <span class="product__price-new">19 <span>грн.</span></span>
+            <span class="product__price-old">21 <span>грн.</span></span>
+         </div>
+         <button class="product__btn">Купить</button>
+      </div>
+   </div>
+</div>
+      </div>
+      <div class="swiper-slide">
+			<div class="product">
+   <div class="product__content">
+      <div class="product__sticker">
+         <div class="product__sticker-box">
+            <svg class="orange">
+               <use xlink:href='img/sprite.svg#sticker'></use>
+            </svg>
+            <span class="orange">НОВИНКА</span>
+         </div>
+      </div>
+
+      <div class="product__swiper swiper">
+         <div class="product__wrapper swiper-wrapper">
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-1.png"
+                     alt="Walnut">
+               </div>
+            </div>
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-1.png"
+                     alt="Walnut">
+               </div>
+            </div>
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-1.png"
+                     alt="Walnut">
+               </div>
+            </div>
+         </div>
+         <svg class='product__arrow product-next swiper-button-next'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+         <svg class='product__arrow product-prev swiper-button-prev'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+      </div>
+   </div>
+   <div class="product__info">
+      <div class="product__descr">
+         <div class="product__holder">
+            <a class="product__holder-name" href="#">Грецкий орех</a>
+            <a class="product__holder-art" href="#">Арт: 0091</a>
+            <p>Орех сладкий, классический, очищенный</p>
+         </div>
+         <div class="product__block">
+            <div class="product__box">
+               <svg class="balance">
+                  <use xlink:href='img/sprite.svg#balance'></use>
+               </svg>
+               <div class="product__box-wrap">
+                  <p>Масса:</p>
+                  <span>40г.</span>
+               </div>
+            </div>
+            <div class="product__box">
+               <svg class="package">
+                  <use xlink:href='img/sprite.svg#package'></use>
+               </svg>
+               <div class="product__box-wrap">
+                  <p>Упаковка</p>
+                  <span>вакуумная</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="product__purchase">
+         <div class="product__price">
+            <p>Цена:</p>
+            <span class="product__price-new"><span>от</span> 21 <span>грн.</span></span>
+         </div>
+         <button class="product__btn">Купить</button>
+      </div>
+   </div>
+</div>
+      </div>
+      <div class="swiper-slide">
+			<div class="product">
+   <div class="product__content">
+      <div class="product__swiper swiper">
+         <div class="product__wrapper swiper-wrapper">
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-1.png"
+                     alt="Walnut">
+               </div>
+            </div>
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-1.png"
+                     alt="Walnut">
+               </div>
+            </div>
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-1.png"
+                     alt="Walnut">
+               </div>
+            </div>
+         </div>
+         <svg class='product__arrow product-next swiper-button-next'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+         <svg class='product__arrow product-prev swiper-button-prev'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+      </div>
+   </div>
+   <div class="product__info">
+      <div class="product__descr">
+         <div class="product__holder">
+            <a class="product__holder-name" href="#">Грецкий орех</a>
+            <a class="product__holder-art" href="#">Арт: 0091</a>
+            <p>Орех сладкий, классический, очищенный</p>
+         </div>
+         <div class="product__block">
+            <div class="product__box">
+               <svg class="balance">
+                  <use xlink:href='img/sprite.svg#balance'></use>
+               </svg>
+               <div class="product__box-wrap">
+                  <p>Масса:</p>
+                  <span>40г.</span>
+               </div>
+            </div>
+            <div class="product__box">
+               <svg class="package">
+                  <use xlink:href='img/sprite.svg#package'></use>
+               </svg>
+               <div class="product__box-wrap">
+                  <p>Упаковка</p>
+                  <span>вакуумная</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="product__purchase">
+         <div class="product__price">
+            <p>Цена:</p>
+            <span class="product__price-new"><span>от</span> 21 <span>грн.</span></span>
+         </div>
+         <button class="product__btn">Купить</button>
+      </div>
+   </div>
+</div>
+      </div>
+   </div>
+   <div class="shop__arrow arrow-btn">
+      <div class="arrow-btn__box">
+         <svg class='arrow-btn__svg catalog-prev swiper-button-prev'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+      </div>
+      <div class="arrow-btn__box">
+         <svg class='arrow-btn__svg catalog-next swiper-button-next'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+      </div>
+   </div>
+</div>
+
+<div class="shop__swiper catalog__swiper swiper">
+   <div class="shop__wrapper catalog__wrapper swiper-wrapper">
+      <div class="swiper-slide">
+			<div class="product">
+   <div class="product__content">
+      <div class="product__swiper swiper">
+         <div class="product__wrapper swiper-wrapper">
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-2.png"
+                     alt="Walnut">
+               </div>
+            </div>
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-2.png"
+                     alt="Walnut">
+               </div>
+            </div>
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-2.png"
+                     alt="Walnut">
+               </div>
+            </div>
+         </div>
+         <svg class='product__arrow product-next swiper-button-next'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+         <svg class='product__arrow product-prev swiper-button-prev'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+      </div>
+   </div>
+   <div class="product__info">
+      <div class="product__descr">
+         <div class="product__holder">
+            <a class="product__holder-name" href="#">Грецкий орех</a>
+            <a class="product__holder-art" href="#">Арт: 0091</a>
+            <p>Орех сладкий, классический, очищенный</p>
+         </div>
+         <div class="product__block">
+            <div class="product__box">
+               <svg class="balance">
+                  <use xlink:href='img/sprite.svg#balance'></use>
+               </svg>
+               <div class="product__box-wrap">
+                  <p>Масса:</p>
+                  <span>40г.</span>
+               </div>
+            </div>
+            <div class="product__box">
+               <svg class="package">
+                  <use xlink:href='img/sprite.svg#package'></use>
+               </svg>
+               <div class="product__box-wrap">
+                  <p>Упаковка</p>
+                  <span>вакуумная</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="product__purchase">
+         <div class="product__price">
+            <p>Цена:</p>
+            <span class="product__price-new">19 <span>грн.</span></span>
+            <span class="product__price-old">21 <span>грн.</span></span>
+         </div>
+         <button class="product__btn">Купить</button>
+      </div>
+   </div>
+</div>
+      </div>
+      <div class="swiper-slide">
+         <div class="product">
+   <div class="product__content">
+      <div class="product__swiper swiper">
+         <div class="product__wrapper swiper-wrapper">
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-2.png"
+                     alt="Walnut">
+               </div>
+            </div>
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-2.png"
+                     alt="Walnut">
+               </div>
+            </div>
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-2.png"
+                     alt="Walnut">
+               </div>
+            </div>
+         </div>
+         <svg class='product__arrow product-next swiper-button-next'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+         <svg class='product__arrow product-prev swiper-button-prev'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+      </div>
+   </div>
+   <div class="product__info">
+      <div class="product__descr">
+         <div class="product__holder">
+            <a class="product__holder-name" href="#">Грецкий орех</a>
+            <a class="product__holder-art" href="#">Арт: 0091</a>
+            <p>Орех сладкий, классический, очищенный</p>
+         </div>
+         <div class="product__block">
+            <div class="product__box">
+               <svg class="balance">
+                  <use xlink:href='img/sprite.svg#balance'></use>
+               </svg>
+               <div class="product__box-wrap">
+                  <p>Масса:</p>
+                  <span>40г.</span>
+               </div>
+            </div>
+            <div class="product__box">
+               <svg class="package">
+                  <use xlink:href='img/sprite.svg#package'></use>
+               </svg>
+               <div class="product__box-wrap">
+                  <p>Упаковка</p>
+                  <span>вакуумная</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="product__purchase">
+         <div class="product__price">
+            <p>Цена:</p>
+            <span class="product__price-new">19 <span>грн.</span></span>
+            <span class="product__price-old">21 <span>грн.</span></span>
+         </div>
+         <button class="product__btn">Купить</button>
+      </div>
+   </div>
+</div>
+      </div>
+      <div class="swiper-slide">
+         <div class="product">
+   <div class="product__content">
+      <div class="product__swiper swiper">
+         <div class="product__wrapper swiper-wrapper">
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-2.png"
+                     alt="Walnut">
+               </div>
+            </div>
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-2.png"
+                     alt="Walnut">
+               </div>
+            </div>
+            <div class="product__slide swiper-slide">
+               <div class="product__zoom swiper-zoom-container">
+                  <span></span>
+                  <img class="product__image" src="img/product/walnut-2.png"
+                     alt="Walnut">
+               </div>
+            </div>
+         </div>
+         <svg class='product__arrow product-next swiper-button-next'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+         <svg class='product__arrow product-prev swiper-button-prev'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+      </div>
+   </div>
+   <div class="product__info">
+      <div class="product__descr">
+         <div class="product__holder">
+            <a class="product__holder-name" href="#">Грецкий орех</a>
+            <a class="product__holder-art" href="#">Арт: 0091</a>
+            <p>Орех сладкий, классический, очищенный</p>
+         </div>
+         <div class="product__block">
+            <div class="product__box">
+               <svg class="balance">
+                  <use xlink:href='img/sprite.svg#balance'></use>
+               </svg>
+               <div class="product__box-wrap">
+                  <p>Масса:</p>
+                  <span>40г.</span>
+               </div>
+            </div>
+            <div class="product__box">
+               <svg class="package">
+                  <use xlink:href='img/sprite.svg#package'></use>
+               </svg>
+               <div class="product__box-wrap">
+                  <p>Упаковка</p>
+                  <span>вакуумная</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="product__purchase">
+         <div class="product__price">
+            <p>Цена:</p>
+            <span class="product__price-new">19 <span>грн.</span></span>
+            <span class="product__price-old">21 <span>грн.</span></span>
+         </div>
+         <button class="product__btn">Купить</button>
+      </div>
+   </div>
+</div>
+      </div>
+   </div>
+   <div class="shop__arrow arrow-btn">
+      <div class="arrow-btn__box">
+         <svg class='arrow-btn__svg catalog-prev swiper-button-prev'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+      </div>
+      <div class="arrow-btn__box">
+         <svg class='arrow-btn__svg catalog-next swiper-button-next'>
+            <use xlink:href='img/sprite.svg#swiper-arrow'></use>
+         </svg>
+      </div>
+   </div>
+</div>
+							<button class="store__button button-white">Загрузить еще</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="manufacturer history">
+				<div class="container">
+					<div class="manufacturer__body">
+						<div class="history__info">
+							<h2 class="history__title h2-title">Экологически чистый грецкий орех</h2>
+							<h4 class="history__sub-title">Оптом, и в розницу</h4>
+							<div class="history__box" data-simplebar>
+								<p class="history__text">
+									Сельскохозяйственный обслуживающий кооператив
+									“Орех Причерноморья” выращивает смешанные сады
+									ореха грецкого с фундуком, а также ореха грецкого
+									с шиповником, на площади более 150 гектаров.
+								</p>
+								<p class="history__text">
+									Помимо этого кооператив занимается выращиванием
+									посадочного материала, саженцов привитого и непривитого
+									грецкого ореха, фундука и шиповника.
+								</p>
+								<p class="history__text">
+									Орех Причерноморья – это первый и единственный в Украине сад по совместному выращиванию
+									фундука и грецкого ореха
+								</p>
+
+								<p class="history__text">
+									Сельскохозяйственный обслуживающий кооператив
+									“Орех Причерноморья” выращивает смешанные сады
+									ореха грецкого с фундуком, а также ореха грецкого
+									с шиповником, на площади более 150 гектаров.
+								</p>
+								<p class="history__text">
+									Помимо этого кооператив занимается выращиванием
+									посадочного материала, саженцов привитого и непривитого
+									грецкого ореха, фундука и шиповника.
+								</p>
+								<p class="history__text">
+									Орех Причерноморья – это первый и единственный в Украине сад по совместному выращиванию
+									фундука и грецкого ореха
+								</p>
+							</div>
+						</div>
+
+						<div class="manufacturer__swiper swiper">
+							<div class="manufacturer__wrapper swiper-wrapper">
+								<div class="manufacturer__slide swiper-slide">
+									<img src="img/store/walnut-img.jpg" alt="Images">
+								</div>
+								<div class="manufacturer__slide swiper-slide">
+									<img src="img/store/walnut-img.jpg" alt="Images">
+								</div>
+								<div class="manufacturer__slide swiper-slide">
+									<img src="img/store/walnut-img.jpg" alt="Images">
+								</div>
+							</div>
+
+							<div class="manufacturer__arrow arrow-btn">
+								<div class="arrow-btn__box">
+									<svg class='arrow-btn__svg manufacturer-prev swiper-button-prev'>
+										<use xlink:href='img/sprite.svg#swiper-arrow'></use>
+									</svg>
+								</div>
+								<div class="arrow-btn__box">
+									<svg class='arrow-btn__svg manufacturer-next swiper-button-next'>
+										<use xlink:href='img/sprite.svg#swiper-arrow'></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+   <div class="footer__contact">
+      <div class="container">
+         <div class="footer__contact-body">
+            <div class="footer__info">
+               <h2 class="footer__title h2-title">Контакты</h2>
+               <div class="footer__content">
+                  <div class="footer__block">
+                     <div class="footer__block-box">
+                        <svg class='footer__icon-img'>
+                           <use xlink:href='img/sprite.svg#tel'></use>
+                        </svg>
+                        <div class="phone">
+                           <a class="phone__link" href="tel:+380447505011">
+                              <span>+38 (095)</span> 711 11 11
+                           </a>
+                           <a class="phone__link" href="tel:+380977755051">
+                              <span>+38 (095)</span> 711 11 11
+                           </a>
+                        </div>
+                     </div>
+                     <div class="messengers">
+                        <a class="messengers__link" href="#">
+                           <svg class='messengers__img'>
+                              <use xlink:href='img/sprite.svg#viber'></use>
+                           </svg>
+                        </a>
+                        <a class="messengers__link" href="#">
+                           <svg class='messengers__img telegram'>
+                              <use xlink:href='img/sprite.svg#telegram'></use>
+                           </svg>
+                        </a>
+                        <a class="messengers__link" href="#">
+                           <svg class='messengers__img whatsapp'>
+                              <use xlink:href='img/sprite.svg#whatsapp'></use>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="footer__items">
+                     <svg class='footer__items-img'>
+                        <use xlink:href='img/sprite.svg#email'></use>
+                     </svg>
+                     <a href="mailto:nuts@nbsc.com.ua">nuts@nbsc.com.ua</a>
+                  </div>
+                  <div class="footer__items">
+                     <svg class='footer__items-img'>
+                        <use xlink:href='img/sprite.svg#home'></use>
+                     </svg>
+                     <div class="footer__items-box">
+                        <span>Офис и отдел продаж</span>
+                        <p>Украина, г. Одесса, <br> ул. Космонавтов, 32</p>
+                     </div>
+                  </div>
+                  <div class="footer__items">
+                     <svg class='footer__items-img'>
+                        <use xlink:href='img/sprite.svg#wood'></use>
+                     </svg>
+                     <div class="footer__items-box">
+                        <span>Производство</span>
+                        <p>Украина, Одесская обл, <br> с. Яськи, ул. Центральная, 232</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <iframe class="footer__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5499.831538077693!2d30.71659185759802!3d46.43054906441439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633a7b20ed43b%3A0xfaab4e45d64743a!2z0LLRg9C70LjRhtGPINCa0L7RgdC80L7QvdCw0LLRgtGW0LIsIDMyLCDQntC00LXRgdCwLCDQntC00LXRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1suk!2sua!4v1683321355908!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+      </div>
+   </div>
+   <div class="footer__menu">
+      <div class="container">
+         <div class="footer__menu-body">
+            <a class="logo adaptive" href="#">
+               <img src="img/logo.png" alt="Logo">
+               <span>ОРЕХ <br> ПРИЧЕРНОМОРЬЯ</span>
+            </a>
+            <ul class="menu__list">
+               <li><a class="menu__link active" href="#">Магазин</a></li>
+               <li><a class="menu__link" href="#">О производстве</a></li>
+               <li><a class="menu__link" href="#">Оплата и доставка</a></li>
+               <li><a class="menu__link" href="#">Корпоративным клиентам</a></li>
+               <li><a class="menu__link" href="#">Новости и статьи</a></li>
+               <li><a class="menu__link" href="#">Контакты</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div class="footer__copyright">
+      <div class="container">
+         <div class="footer__copyright-body">
+            <p class="footer__dev">
+               Разработано
+               <a class="footer__dev-link" href="#"><span>AVADA</span> MEDIA</a>
+            </p>
+            <p class="footer__copy">Copyright © 2019. Все права защищены</p>
+            <div class="social">
+               <a class="social__link" href="#">
+                  <svg class='social__img'>
+                     <use xlink:href='img/sprite.svg#facebook'></use>
+                  </svg>
+               </a>
+               <a class="social__link" href="#">
+                  <svg class='social__img'>
+                     <use xlink:href='img/sprite.svg#instagram'></use>
+                  </svg>
+               </a>
+               <a class="social__link" href="#">
+                  <svg class='social__img youtube'>
+                     <use xlink:href='img/sprite.svg#youtube'></use>
+                  </svg>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230525184505"></script>
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?_v=20230525184505"></script>
+<script src="js/app.min.js?_v=20230525184505"></script>
+</body>
+
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230525184505"/>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css?_v=20230525184505"/>
+   <link rel="stylesheet" href="css/style.min.css?_v=20230525184505">
+   <title>Новость</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+   <div class="header__panel">
+      <div class="container">
+         <div class="header__panel-wrapper">
+            <div class="phone mobile">
+               <a class="phone__link" href="tel:+380447505011">
+                  <svg class='phone__img'>
+                     <use xlink:href='img/sprite.svg#tel'></use>
+                  </svg>
+                  <span>+38 (044)</span> 750-50-11
+               </a>
+            </div>
+            <button class="header__button button-green mobile">Заказать звонок</button>
+
+            <div class="social mobile">
+               <a class="social__link" href="#">
+                  <svg class='social__img'>
+                     <use xlink:href='img/sprite.svg#facebook'></use>
+                  </svg>
+               </a>
+               <a class="social__link" href="#">
+                  <svg class='social__img'>
+                     <use xlink:href='img/sprite.svg#instagram'></use>
+                  </svg>
+               </a>
+               <a class="social__link" href="#">
+                  <svg class='social__img youtube'>
+                     <use xlink:href='img/sprite.svg#youtube'></use>
+                  </svg>
+               </a>
+            </div>
+            <div class="header__content-box">
+               <a class="header__discount" href="#">
+                  Ваша персональная скидка - 5%
+               </a>
+               <div class="header__box">
+                  <div class="header__authorization">
+                     <a class="header__authorization-link" href="#">
+                        <svg>
+                           <use xlink:href='img/sprite.svg#user'></use>
+                        </svg>
+                        <span>Вход</span>
+                     </a>
+                     <a class="header__authorization-link" href="#">
+                        <span>Регистрация</span>
+                     </a>
+                  </div>
+                  <div class="header__language">
+                     <span class="header__language-current">Ru</span>
+                     <ul class="header__language-list">
+                        <li class="header__language-item" data-lang="Ru">Ru</li>
+                        <li class="header__language-item" data-lang="Ua">Ua</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="header__contact">
+      <div class="container">
+         <div class="header__contact-wrapper">
+            <div class="header__holder">
+               <a class="logo adaptive" href="#">
+                  <img src="img/logo.png" alt="Logo">
+                  <span>ОРЕХ <br> ПРИЧЕРНОМОРЬЯ</span>
+               </a>
+               <div class="menu__icon">
+                  <span></span>
+               </div>
+            </div>
+            <div class="header__block">
+               <div class="header__block-box">
+                  <div class="messengers">
+                     <a class="messengers__link" href="#">
+                        <svg class='messengers__img'>
+                           <use xlink:href='img/sprite.svg#viber'></use>
+                        </svg>
+                     </a>
+                     <a class="messengers__link" href="#">
+                        <svg class='messengers__img telegram'>
+                           <use xlink:href='img/sprite.svg#telegram'></use>
+                        </svg>
+                     </a>
+                     <a class="messengers__link" href="#">
+                        <svg class='messengers__img whatsapp'>
+                           <use xlink:href='img/sprite.svg#whatsapp'></use>
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="phone">
+                     <a class="phone__link" href="tel:+380447505011">
+                        <span>+38 (044)</span> 750-50-11
+                     </a>
+                     <a class="phone__link" href="tel:+380977755051">
+                        <span>+38 (097)</span> 775-50-51
+                     </a>
+                  </div>
+               </div>
+               <div class="header__block-call">
+                  <button class="header__button button-green">Заказать звонок</button>
+                  <span>Ждем Вашего звонка ежедневно с 9 до 18</span>
+               </div>
+               <button class="header__basket">
+                  <svg>
+                     <use xlink:href='img/sprite.svg#basket'></use>
+                  </svg>
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="header__body">
+      <div class="container">
+         <div class="header__menu menu">
+            <nav class="menu__body">
+               <div class="header__menu-white">
+                  <a class="logo mobile-menu" href="#">
+                     <img src="img/logo.png" alt="Logo">
+                     <span>ОРЕХ <br> ПРИЧЕРНОМОРЬЯ</span>
+                  </a>
+                  <div class="header__block-box mobile-menu">
+                     <div class="messengers">
+                        <a class="messengers__link" href="#">
+                           <svg class='messengers__img'>
+                              <use xlink:href='img/sprite.svg#viber'></use>
+                           </svg>
+                        </a>
+                        <a class="messengers__link" href="#">
+                           <svg class='messengers__img telegram'>
+                              <use xlink:href='img/sprite.svg#telegram'></use>
+                           </svg>
+                        </a>
+                        <a class="messengers__link" href="#">
+                           <svg class='messengers__img whatsapp'>
+                              <use xlink:href='img/sprite.svg#whatsapp'></use>
+                           </svg>
+                        </a>
+                     </div>
+                     <div class="phone">
+                        <a class="phone__link" href="tel:+380447505011">
+                           <span>+38 (044)</span> 750-50-11
+                        </a>
+                        <a class="phone__link" href="tel:+380977755051">
+                           <span>+38 (097)</span> 775-50-51
+                        </a>
+                     </div>
+                  </div>
+                  <div class="menu__icon close">
+                     <span></span>
+                  </div>
+               </div>
+               <div class="header__menu-gray">
+                  <div class="header__authorization mobile-menu">
+                     <a class="header__authorization-link" href="#">
+                        <svg>
+                           <use xlink:href='img/sprite.svg#user'></use>
+                        </svg>
+                        <span>Вход</span>
+                     </a>
+                     <a class="header__authorization-link" href="#">
+                        <span>Регистрация</span>
+                     </a>
+                  </div>
+                  <div class="social mobile-menu">
+                     <a class="social__link" href="#">
+                        <svg class='social__img'>
+                           <use xlink:href='img/sprite.svg#facebook'></use>
+                        </svg>
+                     </a>
+                     <a class="social__link" href="#">
+                        <svg class='social__img'>
+                           <use xlink:href='img/sprite.svg#instagram'></use>
+                        </svg>
+                     </a>
+                     <a class="social__link" href="#">
+                        <svg class='social__img youtube'>
+                           <use xlink:href='img/sprite.svg#youtube'></use>
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+               <ul class="menu__list">
+                  <li><a class="menu__link active" href="#">Магазин</a></li>
+                  <li><a class="menu__link" href="#">О производстве</a></li>
+                  <li><a class="menu__link" href="#">Оплата и доставка</a></li>
+                  <li><a class="menu__link" href="#">Оптовым и корпоративным клиентам</a></li>
+                  <li><a class="menu__link" href="#">Новости и статьи</a></li>
+                  <li><a class="menu__link" href="#">Контакты</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </div>
+</header>
+
+		<main class="main">
+			<div class="breadcrumbs gray">
+				<div class="breadcrumbs__body">
+					<a class="breadcrumbs__main" href="index.html">Главная</a>
+					<svg class='breadcrumbs__arrow'>
+						<use xlink:href='img/sprite.svg#swiper-arrow'></use>
+					</svg>
+					<a class="breadcrumbs__current" href="#">Новости и статьи</a>
+				</div>
+			</div>
+
+			<div class="container">
+				<div id="main-content" class="container-wrapper">
+					<div id="sidebar" class="sidebar">
+						<h5 class="sidebar__title">Последние публикации</h5>
+						<div class="sidebar__inner">
+							<ul class="sidebar__news">
+								<li class="sidebar__new">
+									<div class="sidebar__preview preview-1"></div>
+									<div class="news__content">
+   <a class="news__content-date" href="#">12.04.2019</a>
+   <a class="news__content-title" href="#">
+      <h6>Центр поддержки экспорта, в студии Павел Тулба</h6>
+   </a>
+   <p class="news__content-text">
+      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...
+   </p>
+   <a class="news__content-btn" href="#">
+      <span>Читать</span>
+      <svg>
+         <use xlink:href='img/sprite.svg#news-arrow'></use>
+      </svg>
+   </a>
+</div>
+								</li>
+								<li class="sidebar__new">
+									<div class="sidebar__preview preview-2"></div>
+									<div class="news__content">
+   <a class="news__content-date" href="#">12.04.2019</a>
+   <a class="news__content-title" href="#">
+      <h6>Центр поддержки экспорта, в студии Павел Тулба</h6>
+   </a>
+   <p class="news__content-text">
+      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...
+   </p>
+   <a class="news__content-btn" href="#">
+      <span>Читать</span>
+      <svg>
+         <use xlink:href='img/sprite.svg#news-arrow'></use>
+      </svg>
+   </a>
+</div>
+								</li>
+								<li class="sidebar__new">
+									<div class="sidebar__preview preview-3"></div>
+									<div class="news__content">
+   <a class="news__content-date" href="#">12.04.2019</a>
+   <a class="news__content-title" href="#">
+      <h6>Центр поддержки экспорта, в студии Павел Тулба</h6>
+   </a>
+   <p class="news__content-text">
+      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...
+   </p>
+   <a class="news__content-btn" href="#">
+      <span>Читать</span>
+      <svg>
+         <use xlink:href='img/sprite.svg#news-arrow'></use>
+      </svg>
+   </a>
+</div>
+								</li>
+							</ul>
+							<div class="sidebar__box">
+								<span>ОРЕХ <br> ПРИЧЕРНОМОРЬЯ</span>
+								<p>Присоединяйтесь <br> к нам в соц. сетях</p>
+								<div class="social social-sidebar">
+									<a class="social__link" href="#">
+										<svg class='social__img'>
+											<use xlink:href='img/sprite.svg#facebook'></use>
+										</svg>
+									</a>
+									<a class="social__link" href="#">
+										<svg class='social__img'>
+											<use xlink:href='img/sprite.svg#instagram'></use>
+										</svg>
+									</a>
+									<a class="social__link" href="#">
+										<svg class='social__img youtube'>
+											<use xlink:href='img/sprite.svg#youtube'></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<section id="content" class="specific-news">
+						<h3 class="specific-news__title">Центр поддержки экспорта, в студии Павел Тулба</h3>
+						<a class="specific-news__date" href="#">12.04.2019</a>
+						<img class="specific-news__image" src="img/news/specific-news-1.jpg" alt="Image news">
+						<div class="specific-news__box">
+							<p class="specific-news__text">
+								Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” предлагает своим клиентам
+								выгодные условия сотрудничества. Ореховый бизнес – один из наиболее перспективных в Украине.
+								Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть возможность зарабатывать
+								десятки тысяч долларов в год всего на нескольких гектарах земли.
+							</p>
+							<p class="specific-news__text">
+								Предприятие основано в 2012 году для закладки смешанного сада грецкого ореха и фундука в Одесской
+								области. На сегодня уже заложено более 200 гектаров сада и этот процесс продолжается. Кооператив
+								предоставляет полный цикл сопровождения: от выращивания до сбыта.
+							</p>
+							<p class="specific-news__text">
+								Кроме выращивания грецкого ореха и фундука, компания занимается выращиванием саженцев, разведением
+								и выращиванием овец, а также является первой в Украине компанией, приступившей к промышленному
+								выращиванию трюфелей на корнях фундука.
+							</p>
+						</div>
+						<h4 class="specific-news__small-title">
+							В Украине появится первое насаждение органического шиповника
+						</h4>
+						<p class="specific-news__text">
+							Наш сельскохозяйственный обслуживающий кооператив «Орех Причерноморья» был основан в 2012-ом году
+							для закладки смешанного сада грецкого ореха и фундука. На данный момент во владении нашей компании
+							находится 1 гектар тепличной площади и 270 гектар садовой площади, которую мы планируем расширять.
+							«Орех Причерноморья» включен в реестр Министерства Аграрной Политики Украины.
+						</p>
+						<h6 class="specific-news__min-title">Смешанный сад грецкий орех+шиповник</h6>
+						<ul class="specific-news__list">
+							<li class="specific-news__item">
+								Возможность полной механизации всех работ по саду
+							</li>
+							<li class="specific-news__item">
+								Невысокая стоимость смешанного сада при закладке
+							</li>
+							<li class="specific-news__item">
+								Необходимость в интенсивном поливе только первые четыре года</li>
+							<li class="specific-news__item">
+								Долгий срок хранения готовой продукции и унификация сушильных камер и складов для хранения
+							</li>
+						</ul>
+						<img class="specific-news__image" src="img/news/specific-news-2.jpg" alt="Image news">
+						<h4 class="specific-news__small-title">
+							В Украине появится первое насаждение органического шиповника
+						</h4>
+						<div class="specific-news__box">
+							<p class="specific-news__text">
+								Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” предлагает своим клиентам
+								выгодные условия сотрудничества. Ореховый бизнес – один из наиболее перспективных в Украине.
+								Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть возможность зарабатывать
+								десятки тысяч долларов в год всего на нескольких гектарах земли.
+							</p>
+							<p class="specific-news__text">
+								Нами разработано и опробовано на собственной практике предложение для закладки многолетних насаждений шиповника, на земельных участках не пригодных к традиционному земледелию. Первых 5 гектар промышленной плантации шиповника, были высажены на месте бывшей сельской свалки и остатков разрушенной молочно товарной фермы.
+							</p>
+						</div>
+					</section>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+   <div class="footer__contact">
+      <div class="container">
+         <div class="footer__contact-body">
+            <div class="footer__info">
+               <h2 class="footer__title h2-title">Контакты</h2>
+               <div class="footer__content">
+                  <div class="footer__block">
+                     <div class="footer__block-box">
+                        <svg class='footer__icon-img'>
+                           <use xlink:href='img/sprite.svg#tel'></use>
+                        </svg>
+                        <div class="phone">
+                           <a class="phone__link" href="tel:+380447505011">
+                              <span>+38 (095)</span> 711 11 11
+                           </a>
+                           <a class="phone__link" href="tel:+380977755051">
+                              <span>+38 (095)</span> 711 11 11
+                           </a>
+                        </div>
+                     </div>
+                     <div class="messengers">
+                        <a class="messengers__link" href="#">
+                           <svg class='messengers__img'>
+                              <use xlink:href='img/sprite.svg#viber'></use>
+                           </svg>
+                        </a>
+                        <a class="messengers__link" href="#">
+                           <svg class='messengers__img telegram'>
+                              <use xlink:href='img/sprite.svg#telegram'></use>
+                           </svg>
+                        </a>
+                        <a class="messengers__link" href="#">
+                           <svg class='messengers__img whatsapp'>
+                              <use xlink:href='img/sprite.svg#whatsapp'></use>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="footer__items">
+                     <svg class='footer__items-img'>
+                        <use xlink:href='img/sprite.svg#email'></use>
+                     </svg>
+                     <a href="mailto:nuts@nbsc.com.ua">nuts@nbsc.com.ua</a>
+                  </div>
+                  <div class="footer__items">
+                     <svg class='footer__items-img'>
+                        <use xlink:href='img/sprite.svg#home'></use>
+                     </svg>
+                     <div class="footer__items-box">
+                        <span>Офис и отдел продаж</span>
+                        <p>Украина, г. Одесса, <br> ул. Космонавтов, 32</p>
+                     </div>
+                  </div>
+                  <div class="footer__items">
+                     <svg class='footer__items-img'>
+                        <use xlink:href='img/sprite.svg#wood'></use>
+                     </svg>
+                     <div class="footer__items-box">
+                        <span>Производство</span>
+                        <p>Украина, Одесская обл, <br> с. Яськи, ул. Центральная, 232</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <iframe class="footer__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5499.831538077693!2d30.71659185759802!3d46.43054906441439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633a7b20ed43b%3A0xfaab4e45d64743a!2z0LLRg9C70LjRhtGPINCa0L7RgdC80L7QvdCw0LLRgtGW0LIsIDMyLCDQntC00LXRgdCwLCDQntC00LXRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1suk!2sua!4v1683321355908!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+      </div>
+   </div>
+   <div class="footer__menu">
+      <div class="container">
+         <div class="footer__menu-body">
+            <a class="logo adaptive" href="#">
+               <img src="img/logo.png" alt="Logo">
+               <span>ОРЕХ <br> ПРИЧЕРНОМОРЬЯ</span>
+            </a>
+            <ul class="menu__list">
+               <li><a class="menu__link active" href="#">Магазин</a></li>
+               <li><a class="menu__link" href="#">О производстве</a></li>
+               <li><a class="menu__link" href="#">Оплата и доставка</a></li>
+               <li><a class="menu__link" href="#">Корпоративным клиентам</a></li>
+               <li><a class="menu__link" href="#">Новости и статьи</a></li>
+               <li><a class="menu__link" href="#">Контакты</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div class="footer__copyright">
+      <div class="container">
+         <div class="footer__copyright-body">
+            <p class="footer__dev">
+               Разработано
+               <a class="footer__dev-link" href="#"><span>AVADA</span> MEDIA</a>
+            </p>
+            <p class="footer__copy">Copyright © 2019. Все права защищены</p>
+            <div class="social">
+               <a class="social__link" href="#">
+                  <svg class='social__img'>
+                     <use xlink:href='img/sprite.svg#facebook'></use>
+                  </svg>
+               </a>
+               <a class="social__link" href="#">
+                  <svg class='social__img'>
+                     <use xlink:href='img/sprite.svg#instagram'></use>
+                  </svg>
+               </a>
+               <a class="social__link" href="#">
+                  <svg class='social__img youtube'>
+                     <use xlink:href='img/sprite.svg#youtube'></use>
+                  </svg>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230525184505"></script>
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?_v=20230525184505"></script>
+<script src="js/app.min.js?_v=20230525184505"></script>
+</body>
+
+</html>
