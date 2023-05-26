@@ -3769,7 +3769,7 @@ body {
 }
 
 .card-product {
-  padding-top: 134px;
+  padding-top: 130px;
 }
 
 .card-product__shortly {
@@ -3785,13 +3785,48 @@ body {
   -webkit-column-gap: 60px;
      -moz-column-gap: 60px;
           column-gap: 60px;
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 }
 
 .card-product__images {
   max-width: 553px;
+  height: 571px;
   background: #FCFCFC;
   border: 1.5px solid #93b474;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.card-product__images::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: #93b474;
+  background-image: url("../img/icon/zoom.svg");
+  background-size: 19px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.card-product__swiper {
+  padding: 40px 0;
 }
 
 .card-product__slide {
@@ -3806,18 +3841,36 @@ body {
           justify-content: center;
 }
 
+.card-product__slide.swiper-slide-zoomed .card-product__slide-content {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
 .card-product__slide-content {
   max-width: 153px;
-  height: 431px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .card-product__slide-content img {
   max-width: 100%;
 }
 
+.card-product__arrow {
+  fill: #337D5A;
+}
+
+.card-product__arrow.swiper-button-next {
+  right: 0;
+}
+
+.card-product__arrow.swiper-button-prev {
+  left: 0;
+  rotate: 180deg;
+}
+
 .card-product__info {
-  max-width: 660px;
+  max-width: 662px;
 }
 
 .card-product__small-box {
@@ -3830,21 +3883,21 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 }
 
 .card-product__name {
   font-family: "Raleway";
   font-weight: 700;
+  color: #337D5A;
   font-size: 18px;
   line-height: 21px;
-  color: #337D5A;
 }
 
 .card-product__art {
+  color: #5B5B5B;
   font-size: 16px;
   line-height: 20px;
-  color: #5B5B5B;
 }
 
 .card-product__title {
@@ -3853,22 +3906,24 @@ body {
   font-weight: 800;
   font-size: 30px;
   line-height: 107%;
-  margin-bottom: 20px;
+  margin-bottom: 41px;
+  letter-spacing: 0.01em;
 }
 
 .card-product__list {
-  margin-bottom: 30px;
+  margin-bottom: 43px;
 }
 
 .card-product__item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 60%;
-  grid-template-columns: 40% 60%;
+  -ms-grid-columns: 38% 1fr;
+  grid-template-columns: 38% 1fr;
+  gap: 22px;
 }
 
 .card-product__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 38px;
 }
 
 .card-product__item span {
@@ -3888,14 +3943,15 @@ body {
 .card-product__box {
   background: #FCFCFC;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  padding: 22px 22px 22px 66px;
+  padding: 20px 20px 20px 74px;
   position: relative;
+  margin-bottom: 36px;
 }
 
 .card-product__box::before {
   content: url("../img/icon/warning.svg");
   position: absolute;
-  top: 55px;
+  top: 50%;
   left: 18px;
   width: 21px;
   height: 21px;
@@ -3906,7 +3962,7 @@ body {
 
 .card-product__warning {
   font-size: 15px;
-  line-height: 113%;
+  line-height: 144%;
 }
 
 .card-product__picture {
@@ -3917,17 +3973,10 @@ body {
   max-width: 100%;
 }
 
-.card-product__description {
-  max-width: 821px;
-}
-
 .card-product__text {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
   font-size: 15px;
   line-height: 167%;
-  margin-bottom: 15px;
+  margin-bottom: 26px;
 }
 
 .card-product__text span {
@@ -3935,37 +3984,146 @@ body {
   color: #337D5A;
 }
 
-.card-product__sub-title {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 107%;
-  margin-bottom: 15px;
-}
-
-.card-product__bullets:not(:last-child) {
+.card-product__text-box:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.card-product__bullet {
-  font-family: "Montserrat";
-  font-weight: 500;
+.card-product__sub-title {
+  font-weight: 600;
   font-size: 15px;
   line-height: 107%;
+  margin-bottom: 20px;
 }
 
-.card-product__bullet:not(:last-child) {
-  margin-bottom: 10px;
+.card-product__bullets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.card-product__bullet {
+  font-size: 15px;
+  line-height: 107%;
+  list-style: inside;
+  color: #93b474;
+}
+
+.card-product__bullet span {
+  color: #1A2F3F;
+}
+
+.card-product__purchase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 31px;
+}
+
+.card-product__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.card-product__price p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+
+.card-product__price-new {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #337D5A;
+  white-space: nowrap;
+}
+
+.card-product__price-new span {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card-product__price-old {
+  font-size: 18px;
+  line-height: 22px;
+  color: #8A8A8A;
+  position: relative;
+  white-space: nowrap;
+}
+
+.card-product__price-old::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #8A8A8A;
+  width: 100%;
+  height: 100%;
+  bottom: 40%;
+  left: 0;
+}
+
+.card-product__price-old span {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.card-product__btn {
+  width: 190px;
+  height: 52px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+
+.card-product .tabs {
+  margin-bottom: 0;
 }
 
 .card-product .tabs__nav {
-  margin-bottom: 50px;
+  max-width: 775px;
+  margin-bottom: 56px;
+}
+
+.card-product .tabs__nav-btn {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #5B5B5B;
+  padding: 0px 29px 15px 29px;
+}
+
+.card-product .tabs__content {
+  margin-bottom: 0;
 }
 
 .card-product .tabs__panel {
-  -webkit-column-gap: 60px;
-     -moz-column-gap: 60px;
-          column-gap: 60px;
+  -ms-grid-columns: 32% 1fr;
+  grid-template-columns: 32% 1fr;
+  -webkit-column-gap: 57px;
+     -moz-column-gap: 57px;
+          column-gap: 57px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1920px) {
@@ -4264,6 +4422,42 @@ body {
   .history {
     padding-bottom: calc(60px + 30 * ((100vw - 360px) / 1560));
   }
+
+  .card-product {
+    padding-top: calc(60px + 70 * ((100vw - 360px) / 1560));
+  }
+
+  .card-product__name {
+    font-size: calc(14px + 4 * ((100vw - 360px) / 1560));
+  }
+
+  .card-product__name {
+    line-height: calc(16px + 5 * ((100vw - 360px) / 1560));
+  }
+
+  .card-product__art {
+    font-size: calc(12px + 4 * ((100vw - 360px) / 1560));
+  }
+
+  .card-product__art {
+    line-height: calc(14px + 6 * ((100vw - 360px) / 1560));
+  }
+
+  .card-product__title {
+    font-size: calc(20px + 10 * ((100vw - 360px) / 1560));
+  }
+
+  .card-product__item span {
+    font-size: calc(14px + 2 * ((100vw - 360px) / 1560));
+  }
+
+  .card-product__item p {
+    font-size: calc(14px + 1 * ((100vw - 360px) / 1560));
+  }
+
+  .card-product__warning {
+    font-size: calc(12px + 3 * ((100vw - 360px) / 1560));
+  }
 }
 
 @media (max-width: 1440px) {
@@ -4341,6 +4535,39 @@ body {
 
   .footer__copyright {
     height: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-product__shortly {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+
+  .card-product__images {
+    max-width: 380px;
+    height: auto;
+  }
+
+  .card-product__slide-content {
+    max-width: 100px;
+  }
+
+  .card-product__title {
+    margin-bottom: 30px;
+  }
+
+  .card-product__list {
+    margin-bottom: 30px;
+  }
+
+  .card-product__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .card-product__btn {
+    width: 150px;
   }
 }
 
@@ -4862,6 +5089,42 @@ body {
   .history__box {
     max-width: 100%;
   }
+
+  .card-product {
+    margin-top: 119px;
+  }
+
+  .card-product__images {
+    max-width: 280px;
+  }
+
+  .card-product__picture {
+    display: none;
+  }
+
+  .card-product__bullet {
+    line-height: 140%;
+  }
+
+  .card-product .tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-product .tabs__nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  .card-product .tabs__panel--active {
+    display: block;
+  }
 }
 
 @media (max-width: 1024px) and (max-width: 1920px) {
@@ -5147,6 +5410,31 @@ body {
         -ms-flex-order: 2;
             order: 2;
   }
+
+  .card-product__shortly {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .card-product__images {
+    max-width: 100%;
+  }
+
+  .card-product .tabs__nav {
+    max-width: 100%;
+    margin: 0;
+    width: 608px;
+    overflow: auto;
+    padding-bottom: 7px;
+  }
+
+  .card-product .tabs__nav-btn {
+    padding: 0px 5px 10px 5px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -5378,6 +5666,18 @@ body {
   .history__box {
     padding-right: 30px;
   }
+
+  .card-product__purchase {
+    gap: 20px;
+  }
+
+  .card-product__price p {
+    font-size: 16px;
+  }
+
+  .card-product__btn {
+    width: 130px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -5388,7 +5688,7 @@ body {
 
 @media (max-width: 516px) {
   .tabs__nav-btn {
-    gap: 5;
+    gap: 5px;
   }
 }
 

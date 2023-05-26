@@ -4,9 +4,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230525184505"/>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css?_v=20230525184505"/>
-   <link rel="stylesheet" href="css/style.min.css?_v=20230525184505">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230526155744"/>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css?_v=20230526155744"/>
+   <link rel="stylesheet" href="css/style.min.css?_v=20230526155744">
    <title>Сторінка</title>
 </head>
 
@@ -223,21 +223,20 @@
 				<div class="container">
 					<div class="card-product__shortly">
 						<div class="card-product__images">
-
 							<div class="card-product__swiper swiper">
 								<div class="card-product__wrapper swiper-wrapper">
 									<div class="card-product__slide swiper-slide">
-										<div class="card-product__slide-content">
+										<div class="card-product__slide-content swiper-zoom-container">
 											<img src="img/product/card-image.jpg" alt="Image">
 										</div>
 									</div>
 									<div class="card-product__slide swiper-slide">
-										<div class="card-product__slide-content">
+										<div class="card-product__slide-content swiper-zoom-container">
 											<img src="img/product/card-image.jpg" alt="Image">
 										</div>
 									</div>
 									<div class="card-product__slide swiper-slide">
-										<div class="card-product__slide-content">
+										<div class="card-product__slide-content swiper-zoom-container">
 											<img src="img/product/card-image.jpg" alt="Image">
 										</div>
 									</div>
@@ -250,7 +249,6 @@
 									<use xlink:href='img/sprite.svg#swiper-arrow'></use>
 								</svg>
 							</div>
-
 						</div>
 						<div class="card-product__info">
 							<div class="card-product__small-box">
@@ -282,13 +280,13 @@
 									°C до +20 °C, и относительной влажности воздуха не более 75 %
 								</p>
 							</div>
-							<div class="product__purchase">
-								<div class="product__price">
+							<div class="card-product__purchase">
+								<div class="card-product__price">
 									<p>Ваша цена:</p>
-									<span class="product__price-new">19 <span>грн.</span></span>
-									<span class="product__price-old">21 <span>грн.</span></span>
+									<span class="card-product__price-new">19 <span>грн.</span></span>
+									<span class="card-product__price-old">21 <span>грн.</span></span>
 								</div>
-								<button class="product__btn">Заказать</button>
+								<button class="card-product__btn button-green">Заказать</button>
 							</div>
 						</div>
 					</div>
@@ -317,35 +315,34 @@
 											<h6 class="card-product__sub-title">Другие полезные вещества грецких орехов:</h6>
 											<ul class="card-product__bullets">
 												<li class="card-product__bullet">
-													Антиоксиданты защищают печень от повреждений
+													<span>Антиоксиданты защищают печень от повреждений</span>
 												</li>
 												<li class="card-product__bullet">
-													Полифенолы не дают образоваться сосудистым тромбам
+													<span>Полифенолы не дают образоваться сосудистым тромбам</span>
 												</li>
 												<li class="card-product__bullet">
-													Нейропротекторы улучшают работу мозга, отодвигают старость
+													<span>Нейропротекторы улучшают работу мозга, отодвигают старость</span>
 												</li>
 											</ul>
 										</div>
 										<div class="card-product__text-box">
 											<h6 class="card-product__sub-title">Нужно систематически есть грецкие орехи, чтобы:</h6>
 											<ul class="card-product__bullets">
-												<li class="product__bullet">
-													На 30–40 % снизить риск заболевания раком простаты
+												<li class="card-product__bullet">
+													<span>На 30–40 % снизить риск заболевания раком простаты</span>
 												</li>
-												<li class="product__bullet">
-													На 50 % – раком молочной железы
+												<li class="card-product__bullet">
+													<span>На 50 % – раком молочной железы</span>
 												</li>
-												<li class="product__bullet">
-													Предотвратить дегенерацию глазной макулы, а значит, улучшить зрение
+												<li class="card-product__bullet">
+													<span>Предотвратить дегенерацию глазной макулы, а значит, улучшить зрение</span>
 												</li>
-												<li class="product__bullet">
-													Отрегулировать обмен веществ, выработку инсулина; понизить количество сахара в крови
+												<li class="card-product__bullet">
+													<span>Отрегулировать обмен веществ, выработку инсулина; понизить количество сахара в крови</span>
 												</li>
 											</ul>
 										</div>
 									</div>
-
 								</div>
 								<div class="tabs__panel">
 									<div class="card-product__picture">
@@ -353,44 +350,40 @@
 									</div>
 									<div class="card-product__description">
 										<p class="card-product__text">
-											Уже 4000 лет люди питаются ценными грецкими орехами. Они особенно полезны послеоперационным больным, детям, кормящим, беременным женщинам. Чтобы вернуть силы, укрепить иммунитет, одолеть туберкулез, кашель; грецкий орех очищенный, отборный нужно истолочь, смешать с медом (2:1) и чайную ложку целебной смеси употреблять перед едой.
-										</p>
-										<p class="card-product__text">
-											В белке грецких орехов много (15 %) аргинина. Он особенно нужен детям, больным, пожилым людям, в организме которых аминокислота плохо синтезируется. Аргинин помогает сосудам регенерировать, а всему организму – победить воспаления.
+											Уже 4000 лет люди питаются ценными <span>грецкими орехами.</span> Они особенно полезны послеоперационным больным, детям, кормящим, беременным женщинам. Чтобы вернуть силы, укрепить иммунитет, одолеть туберкулез, кашель; грецкий орех очищенный, отборный нужно истолочь, смешать с медом (2:1) и чайную ложку целебной смеси употреблять перед едой.
 										</p>
 										<div class="card-product__text-box">
 											<h6 class="card-product__sub-title">Другие полезные вещества грецких орехов:</h6>
 											<ul class="card-product__bullets">
-												<li class="product__bullet">
-													Антиоксиданты защищают печень от повреждений
+												<li class="card-product__bullet">
+													<span>Антиоксиданты защищают печень от повреждений</span>
 												</li>
-												<li class="product__bullet">
-													Полифенолы не дают образоваться сосудистым тромбам
+												<li class="card-product__bullet">
+													<span>Полифенолы не дают образоваться сосудистым тромбам</span>
 												</li>
-												<li class="product__bullet">
-													Нейропротекторы улучшают работу мозга, отодвигают старость
+												<li class="card-product__bullet">
+													<span>Нейропротекторы улучшают работу мозга, отодвигают старость</span>
 												</li>
 											</ul>
 										</div>
 										<div class="card-product__text-box">
 											<h6 class="card-product__sub-title">Нужно систематически есть грецкие орехи, чтобы:</h6>
 											<ul class="card-product__bullets">
-												<li class="product__bullet">
-													На 30–40 % снизить риск заболевания раком простаты
+												<li class="card-product__bullet">
+													<span>На 30–40 % снизить риск заболевания раком простаты</span>
 												</li>
-												<li class="product__bullet">
-													На 50 % – раком молочной железы
+												<li class="card-product__bullet">
+													<span>На 50 % – раком молочной железы</span>
 												</li>
-												<li class="product__bullet">
-													Предотвратить дегенерацию глазной макулы, а значит, улучшить зрение
+												<li class="card-product__bullet">
+													<span>Предотвратить дегенерацию глазной макулы, а значит, улучшить зрение</span>
 												</li>
-												<li class="product__bullet">
-													Отрегулировать обмен веществ, выработку инсулина; понизить количество сахара в крови
+												<li class="card-product__bullet">
+													<span>Отрегулировать обмен веществ, выработку инсулина; понизить количество сахара в крови</span>
 												</li>
 											</ul>
 										</div>
 									</div>
-
 								</div>
 								<div class="tabs__panel">
 									<div class="card-product__picture">
@@ -398,7 +391,7 @@
 									</div>
 									<div class="card-product__description">
 										<p class="card-product__text">
-											Уже 4000 лет люди питаются ценными грецкими орехами. Они особенно полезны послеоперационным больным, детям, кормящим, беременным женщинам. Чтобы вернуть силы, укрепить иммунитет, одолеть туберкулез, кашель; грецкий орех очищенный, отборный нужно истолочь, смешать с медом (2:1) и чайную ложку целебной смеси употреблять перед едой.
+											Уже 4000 лет люди питаются ценными <span>грецкими орехами.</span> Они особенно полезны послеоперационным больным, детям, кормящим, беременным женщинам. Чтобы вернуть силы, укрепить иммунитет, одолеть туберкулез, кашель; грецкий орех очищенный, отборный нужно истолочь, смешать с медом (2:1) и чайную ложку целебной смеси употреблять перед едой.
 										</p>
 										<p class="card-product__text">
 											В белке грецких орехов много (15 %) аргинина. Он особенно нужен детям, больным, пожилым людям, в организме которых аминокислота плохо синтезируется. Аргинин помогает сосудам регенерировать, а всему организму – победить воспаления.
@@ -406,36 +399,35 @@
 										<div class="card-product__text-box">
 											<h6 class="card-product__sub-title">Другие полезные вещества грецких орехов:</h6>
 											<ul class="card-product__bullets">
-												<li class="product__bullet">
-													Антиоксиданты защищают печень от повреждений
+												<li class="card-product__bullet">
+													<span>Антиоксиданты защищают печень от повреждений</span>
 												</li>
-												<li class="product__bullet">
-													Полифенолы не дают образоваться сосудистым тромбам
+												<li class="card-product__bullet">
+													<span>Полифенолы не дают образоваться сосудистым тромбам</span>
 												</li>
-												<li class="product__bullet">
-													Нейропротекторы улучшают работу мозга, отодвигают старость
+												<li class="card-product__bullet">
+													<span>Нейропротекторы улучшают работу мозга, отодвигают старость</span>
 												</li>
 											</ul>
 										</div>
 										<div class="card-product__text-box">
 											<h6 class="card-product__sub-title">Нужно систематически есть грецкие орехи, чтобы:</h6>
 											<ul class="card-product__bullets">
-												<li class="product__bullet">
-													На 30–40 % снизить риск заболевания раком простаты
+												<li class="card-product__bullet">
+													<span>На 30–40 % снизить риск заболевания раком простаты</span>
 												</li>
-												<li class="product__bullet">
-													На 50 % – раком молочной железы
+												<li class="card-product__bullet">
+													<span>На 50 % – раком молочной железы</span>
 												</li>
-												<li class="product__bullet">
-													Предотвратить дегенерацию глазной макулы, а значит, улучшить зрение
+												<li class="card-product__bullet">
+													<span>Предотвратить дегенерацию глазной макулы, а значит, улучшить зрение</span>
 												</li>
-												<li class="product__bullet">
-													Отрегулировать обмен веществ, выработку инсулина; понизить количество сахара в крови
+												<li class="card-product__bullet">
+													<span>Отрегулировать обмен веществ, выработку инсулина; понизить количество сахара в крови</span>
 												</li>
 											</ul>
 										</div>
 									</div>
-
 								</div>
 								<div class="tabs__panel">
 									<div class="card-product__picture">
@@ -443,46 +435,41 @@
 									</div>
 									<div class="card-product__description">
 										<p class="card-product__text">
-											Уже 4000 лет люди питаются ценными грецкими орехами. Они особенно полезны послеоперационным больным, детям, кормящим, беременным женщинам. Чтобы вернуть силы, укрепить иммунитет, одолеть туберкулез, кашель; грецкий орех очищенный, отборный нужно истолочь, смешать с медом (2:1) и чайную ложку целебной смеси употреблять перед едой.
-										</p>
-										<p class="card-product__text">
-											В белке грецких орехов много (15 %) аргинина. Он особенно нужен детям, больным, пожилым людям, в организме которых аминокислота плохо синтезируется. Аргинин помогает сосудам регенерировать, а всему организму – победить воспаления.
+											Уже 4000 лет люди питаются ценными <span>грецкими орехами.</span> Они особенно полезны послеоперационным больным, детям, кормящим, беременным женщинам. Чтобы вернуть силы, укрепить иммунитет, одолеть туберкулез, кашель; грецкий орех очищенный, отборный нужно истолочь, смешать с медом (2:1) и чайную ложку целебной смеси употреблять перед едой.
 										</p>
 										<div class="card-product__text-box">
 											<h6 class="card-product__sub-title">Другие полезные вещества грецких орехов:</h6>
 											<ul class="card-product__bullets">
-												<li class="product__bullet">
-													Антиоксиданты защищают печень от повреждений
+												<li class="card-product__bullet">
+													<span>Антиоксиданты защищают печень от повреждений</span>
 												</li>
-												<li class="product__bullet">
-													Полифенолы не дают образоваться сосудистым тромбам
+												<li class="card-product__bullet">
+													<span>Полифенолы не дают образоваться сосудистым тромбам</span>
 												</li>
-												<li class="product__bullet">
-													Нейропротекторы улучшают работу мозга, отодвигают старость
+												<li class="card-product__bullet">
+													<span>Нейропротекторы улучшают работу мозга, отодвигают старость</span>
 												</li>
 											</ul>
 										</div>
 										<div class="card-product__text-box">
 											<h6 class="card-product__sub-title">Нужно систематически есть грецкие орехи, чтобы:</h6>
 											<ul class="card-product__bullets">
-												<li class="product__bullet">
-													На 30–40 % снизить риск заболевания раком простаты
+												<li class="card-product__bullet">
+													<span>На 30–40 % снизить риск заболевания раком простаты</span>
 												</li>
-												<li class="product__bullet">
-													На 50 % – раком молочной железы
+												<li class="card-product__bullet">
+													<span>На 50 % – раком молочной железы</span>
 												</li>
-												<li class="product__bullet">
-													Предотвратить дегенерацию глазной макулы, а значит, улучшить зрение
+												<li class="card-product__bullet">
+													<span>Предотвратить дегенерацию глазной макулы, а значит, улучшить зрение</span>
 												</li>
-												<li class="product__bullet">
-													Отрегулировать обмен веществ, выработку инсулина; понизить количество сахара в крови
+												<li class="card-product__bullet">
+													<span>Отрегулировать обмен веществ, выработку инсулина; понизить количество сахара в крови</span>
 												</li>
 											</ul>
 										</div>
 									</div>
-
 								</div>
-
 							</div>
 						</div>
 					</div>
@@ -490,7 +477,9 @@
 			</section>
 
 		</main>
-		<footer class="footer">
+		<!-- Додати клас background де потрібно -->
+
+<footer class="footer background">
    <div class="footer__contact">
       <div class="container">
          <div class="footer__contact-body">
@@ -607,9 +596,9 @@
    </div>
 </footer>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230525184505"></script>
-<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?_v=20230525184505"></script>
-<script src="js/app.min.js?_v=20230525184505"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230526155744"></script>
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?_v=20230526155744"></script>
+<script src="js/app.min.js?_v=20230526155744"></script>
 </body>
 
 </html>
