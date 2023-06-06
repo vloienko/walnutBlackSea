@@ -5384,6 +5384,10 @@ body {
   height: 50px;
 }
 
+.contact-form__tabs.registration {
+  display: block;
+}
+
 .mini-tabs__items {
   margin-top: 15px;
   gap: 0;
