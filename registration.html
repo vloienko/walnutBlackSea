@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+<head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,10 @@
    <link rel="stylesheet" href="css/style.min.css?_v=20230606143527">
    <title>Сторінка</title>
 </head>
-	<body>
-		<div class="wrapper">
-			<header class="header">
+
+<body>
+	<div class="wrapper">
+		<header class="header">
    <div class="header__panel">
       <div class="container">
          <div class="header__panel-wrapper">
@@ -228,222 +229,264 @@
 
 
 
-			<main class="main">
-				<div class="breadcrumbs gray">
-					<div class="breadcrumbs__body">
-						<a class="breadcrumbs__main" href="index.html">Главная</a>
-						<svg class='breadcrumbs__arrow'>
-							<use xlink:href='img/sprite.svg#swiper-arrow'></use>
-						</svg>
-						<a class="breadcrumbs__current" href="#">Новости и статьи</a>
-					</div>
+		<main class="main">
+			<div class="breadcrumbs gray">
+				<div class="breadcrumbs__body">
+					<a class="breadcrumbs__main" href="index.html">Главная</a>
+					<svg class='breadcrumbs__arrow'>
+						<use xlink:href='img/sprite.svg#swiper-arrow'></use>
+					</svg>
+					<a class="breadcrumbs__current" href="#">Регистрация</a>
 				</div>
+			</div>
 
-				<section class="all-events">
-					<div class="container">
-						<div class="all-events__body">
-							<h2 class="all-events__title h2-title">Новости и статьи</h2>
-							<h4 class="all-events__sub-title h4-sub-title">Свежие новости и полезная информация</h4>
-							<div class="all-events__block">
-								<div class="all-events__image">
-									<img src="img/news/news-articles.jpg" alt="Images news">
+			<section class="registration-form">
+				<div class="container">
+					<h2 class="registration-form__title title-user">Регистрация</h2>
+
+					<form class="contact-form" action="#">
+						<h4 class="registration-form__sub-title sub-title-user">1. Контактные данные</h4>
+						<div class="contact-form__tabs tabs" data-tabs="tab">
+							<ul class="registration-form__holder tabs__nav">
+								<li class="tabs__nav-item"><button class="registration-form__switch tabs__nav-btn" type="button">Физическое лицо</button></li>
+								<li class="tabs__nav-item"><button class="registration-form__switch tabs__nav-btn" type="button">Юридическое лицо</button></li>
+							</ul>
+							<div class="contact-form__content tabs__content">
+								<div class="registration-form__panel tabs__panel">
+									<div class="contact-form__column">
+										<div class="contact-form__box">
+											<div class="contact-form__data">
+												<input class="contact-form__input" type="text" placeholder="ФИО*">
+												<input class="contact-form__input" type="email" placeholder="Email*">
+												<input class="contact-form__input" type="tel" placeholder="Телефон*">
+											</div>
+										</div>
+										<div class="contact-form__box">
+											<h4 class="registration-form__sub-title sub-title-user">2. Адрес</h4>
+											<div class="contact-form__data">
+												<div class='dropdown'>
+													<button class='dropdown__button contact-form__dropdown-button'
+														type='button'>Страна</button>
+													<ul class='dropdown__list'>
+														<li class='dropdown__list-item' data-value='Украина'>Украина</li>
+														<li class='dropdown__list-item' data-value='Польща'>Польща</li>
+														<li class='dropdown__list-item' data-value='Великобритания'>Великобритания
+														</li>
+													</ul>
+													<input class='dropdown__input-hidden' type='text' value=''>
+												</div>
+												<div class='dropdown'>
+													<button class='dropdown__button contact-form__dropdown-button'
+														type='button'>Область</button>
+													<ul class='dropdown__list'>
+														<li class='dropdown__list-item' data-value='Черкаська'>Черкаська</li>
+														<li class='dropdown__list-item' data-value='Київська'>Київська</li>
+														<li class='dropdown__list-item' data-value='Волинська'>Волинська</li>
+													</ul>
+													<input class='dropdown__input-hidden' type='text' value=''>
+												</div>
+												<input class="contact-form__input" type="text" placeholder="Город*">
+												<input class="contact-form__input" type="text" placeholder="Адрес">
+											</div>
+										</div>
+										<div class="contact-form__box">
+											<h4 class="registration-form__sub-title sub-title-user">3. Пароль</h4>
+											<div class="contact-form__data">
+												<input class="contact-form__input" type="password" placeholder="Пароль*">
+												<input class="contact-form__input" type="password"
+													placeholder="Подтвердите пароль*">
+											</div>
+										</div>
+									</div>
+									<div class="contact-form__column second">
+										<div class="contact-form__box">
+											<div class="contact-form__data">
+												<div class="form__item">
+													<div class="file">
+														<div id="formPreview" class="file__preview"></div>
+														<div class="file__item">
+															<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image"
+																class="file__item-input">
+															<div class="file__button">Загрузить фото</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="contact-form__checkbox">
+												<input class="contact-form__input" type="checkbox" id="checkbox-FOP">
+												<label for="checkbox-FOP">Являюсь ФОП</label>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="news__content">
-									<a class="news__content-date all-events__news-date" href="#">12.04.2019</a>
-									<a class="all-events__news-title" href="#">
-										<h5>Центр поддержки экспорта, в студии Павел Тулба</h5>
-									</a>
-									<p class="all-events__text">
-										Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” предлагает своим клиентам выгодные условия сотрудничества.
-									</p>
-									<p class="all-events__text">
-										Ореховый бизнес – один из наиболее перспективных в Украине. Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть возможность зарабатывать десятки тысяч долларов в год всего на нескольких гектарах земли.
-									</p>
-									<a class="news__content-btn" href="#">
-										<span>Читать</span>
-										<svg>
-											<use xlink:href='img/sprite.svg#news-arrow'></use>
-										</svg>
-									</a>
+								<div class="registration-form__panel tabs__panel">
+									<div class="contact-form__column">
+										<div class="contact-form__box">
+											<div class="contact-form__data">
+												<input class="contact-form__input" type="text" placeholder="ФИО*">
+												<input class="contact-form__input" type="email" placeholder="Email*">
+												<input class="contact-form__input" type="tel" placeholder="Телефон*">
+											</div>
+										</div>
+										<div class="contact-form__box">
+											<h4 class="registration-form__sub-title sub-title-user">2. Адрес</h4>
+											<div class="contact-form__data">
+												<div class='dropdown'>
+													<button class='dropdown__button contact-form__dropdown-button'
+														type='button'>Страна</button>
+													<ul class='dropdown__list'>
+														<li class='dropdown__list-item' data-value='Украина'>Украина</li>
+														<li class='dropdown__list-item' data-value='Польща'>Польща</li>
+														<li class='dropdown__list-item' data-value='Великобритания'>Великобритания
+														</li>
+													</ul>
+													<input class='dropdown__input-hidden' type='text' value=''>
+												</div>
+												<div class='dropdown'>
+													<button class='dropdown__button contact-form__dropdown-button'
+														type='button'>Область</button>
+													<ul class='dropdown__list'>
+														<li class='dropdown__list-item' data-value='Черкаська'>Черкаська</li>
+														<li class='dropdown__list-item' data-value='Київська'>Київська</li>
+														<li class='dropdown__list-item' data-value='Волинська'>Волинська</li>
+													</ul>
+													<input class='dropdown__input-hidden' type='text' value=''>
+												</div>
+												<input class="contact-form__input" type="text" placeholder="Город*">
+												<input class="contact-form__input" type="text" placeholder="Адрес">
+											</div>
+										</div>
+										<div class="contact-form__box">
+											<h4 class="registration-form__sub-title sub-title-user">3. Пароль</h4>
+											<div class="contact-form__data">
+												<input class="contact-form__input" type="password" placeholder="Пароль*">
+												<input class="contact-form__input" type="password"
+													placeholder="Подтвердите пароль*">
+											</div>
+										</div>
+									</div>
+									<div class="contact-form__column second">
+										<div class="contact-form__box last-box">
+											<div class="contact-form__data">
+												<div class="form__item">
+													<div class="file">
+														<div id="formPreview" class="file__preview"></div>
+														<div class="file__item">
+															<input id="formImage2" accept=".jpg, .png, .gif" type="file" name="image"
+																class="file__item-input">
+															<div class="file__button">Загрузить фото</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="mini-tabs">
+												<div class="contact-form__checkbox column mini-tabs__items">
+													<div class="mini-tabs__item is-active" data-tab-name="tab-1">
+														<div class="contact-form__checkbox-wrap">
+															<input class="contact-form__input" checked type="radio" id="checkbox-LEG" value="legal" name="activity">
+															<label for="checkbox-LEG">Юр. лицо</label>
+														</div>
+													</div>
+													<div class="mini-tabs__item" data-tab-name="tab-2">
+														<div class="contact-form__checkbox-wrap">
+															<input class="contact-form__input" type="radio" id="checkbox-FOP2" value="fop2" name="activity">
+															<label for="checkbox-FOP2">ФОП</label>
+														</div>
+													</div>
+												</div>
+												<div class="mini-tabs__body">
+													<div class="mini-tabs__block is-active tab-1">
+														<div class="contact-form__box">
+															<h4 class="registration-form__sub-title sub-title-user">1. Реквизиты</h4>
+															<div class="contact-form__data">
+																<input class="contact-form__input" type="text" placeholder="ОКПО">
+															</div>
+														</div>
+														<div class="contact-form__box last-box">
+															<h4 class="registration-form__sub-title sub-title-user">2. Юридический адрес</h4>
+															<div class="contact-form__data">
+																<div class='dropdown'>
+																	<button class='dropdown__button contact-form__dropdown-button'
+																		type='button'>Страна</button>
+																	<ul class='dropdown__list'>
+																		<li class='dropdown__list-item' data-value='Украина'>Украина</li>
+																		<li class='dropdown__list-item' data-value='Польща'>Польща</li>
+																		<li class='dropdown__list-item' data-value='Великобритания'>Великобритания
+																		</li>
+																	</ul>
+																	<input class='dropdown__input-hidden' type='text' value=''>
+																</div>
+																<div class='dropdown'>
+																	<button class='dropdown__button contact-form__dropdown-button'
+																		type='button'>Область</button>
+																	<ul class='dropdown__list'>
+																		<li class='dropdown__list-item' data-value='Черкаська'>Черкаська</li>
+																		<li class='dropdown__list-item' data-value='Київська'>Київська</li>
+																		<li class='dropdown__list-item' data-value='Волинська'>Волинська</li>
+																	</ul>
+																	<input class='dropdown__input-hidden' type='text' value=''>
+																</div>
+																<input class="contact-form__input" type="text" placeholder="Город*">
+																<input class="contact-form__input" type="text" placeholder="Адрес">
+																<input class="contact-form__input" type="number" placeholder="Индекс">
+															</div>
+														</div>
+													</div>
+													<div class="mini-tabs__block tab-2">
+														<div class="contact-form__box">
+															<h4 class="registration-form__sub-title sub-title-user">1. Реквизиты</h4>
+															<div class="contact-form__data">
+																<input class="contact-form__input" type="text" placeholder="ЕДРПО">
+															</div>
+														</div>
+														<div class="contact-form__box last-box">
+															<h4 class="registration-form__sub-title sub-title-user">2. Адрес ФОП</h4>
+															<div class="contact-form__data">
+																<div class='dropdown'>
+																	<button class='dropdown__button contact-form__dropdown-button'
+																		type='button'>Страна</button>
+																	<ul class='dropdown__list'>
+																		<li class='dropdown__list-item' data-value='Украина'>Украина</li>
+																		<li class='dropdown__list-item' data-value='Польща'>Польща</li>
+																		<li class='dropdown__list-item' data-value='Великобритания'>Великобритания
+																		</li>
+																	</ul>
+																	<input class='dropdown__input-hidden' type='text' value=''>
+																</div>
+																<div class='dropdown'>
+																	<button class='dropdown__button contact-form__dropdown-button'
+																		type='button'>Область</button>
+																	<ul class='dropdown__list'>
+																		<li class='dropdown__list-item' data-value='Черкаська'>Черкаська</li>
+																		<li class='dropdown__list-item' data-value='Київська'>Київська</li>
+																		<li class='dropdown__list-item' data-value='Волинська'>Волинська</li>
+																	</ul>
+																	<input class='dropdown__input-hidden' type='text' value=''>
+																</div>
+																<input class="contact-form__input" type="text" placeholder="Город*">
+																<input class="contact-form__input" type="text" placeholder="Адрес">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<section class="news">
-   <div class="container">
-      <div class="news__body">
-         <div class="news__block">
-            <div class="news__box">
-               <h2 class="news__title h2-title">Новости</h2>
-               <h4 class="news__sub-title h4-sub-title">Свежие новости и полезная информация</h4>
-            </div>
-            <div class="news__arrow arrow-btn">
-               <div class="arrow-btn__box">
-                  <svg class='arrow-btn__svg news-prev swiper-button-prev'>
-                     <use xlink:href='img/sprite.svg#swiper-arrow'></use>
-                  </svg>
-               </div>
-               <div class="arrow-btn__box">
-                  <svg class='arrow-btn__svg news-next swiper-button-next'>
-                     <use xlink:href='img/sprite.svg#swiper-arrow'></use>
-                  </svg>
-               </div>
-            </div>
-         </div>
-         <div class="news__swiper swiper">
-            <div class="news__wrapper swiper-wrapper">
-               <div class="news__slide swiper-slide">
-                  <div class="news__preview preview-1"></div>
-						<div class="news__content">
-   <a class="news__content-date" href="#">12.04.2019</a>
-   <a class="news__content-title" href="#">
-      <h6>Центр поддержки экспорта, в студии Павел Тулба</h6>
-   </a>
-   <p class="news__content-text">
-      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...
-   </p>
-   <a class="news__content-btn" href="#">
-      <span>Читать</span>
-      <svg>
-         <use xlink:href='img/sprite.svg#news-arrow'></use>
-      </svg>
-   </a>
-</div>
-               </div>
-               <div class="news__slide swiper-slide">
-						<div class="video" data-src="https://www.youtube.com/embed/RAbzslym6o0?autoplay=1">
-   <div class="video__body">
-      <button class="video__button">
-         <svg>
-            <use xlink:href='img/sprite.svg#video-btn'></use>
-         </svg>
-      </button>
-   </div>
-</div>
-						<div class="news__content">
-   <a class="news__content-date" href="#">12.04.2019</a>
-   <a class="news__content-title" href="#">
-      <h6>Центр поддержки экспорта, в студии Павел Тулба</h6>
-   </a>
-   <p class="news__content-text">
-      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...
-   </p>
-   <a class="news__content-btn" href="#">
-      <span>Читать</span>
-      <svg>
-         <use xlink:href='img/sprite.svg#news-arrow'></use>
-      </svg>
-   </a>
-</div>
-               </div>
-               <div class="news__slide swiper-slide">
-                  <div class="news__preview preview-3"></div>
-						<div class="news__content">
-   <a class="news__content-date" href="#">12.04.2019</a>
-   <a class="news__content-title" href="#">
-      <h6>Центр поддержки экспорта, в студии Павел Тулба</h6>
-   </a>
-   <p class="news__content-text">
-      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...
-   </p>
-   <a class="news__content-btn" href="#">
-      <span>Читать</span>
-      <svg>
-         <use xlink:href='img/sprite.svg#news-arrow'></use>
-      </svg>
-   </a>
-</div>
-               </div>
-               <div class="news__slide swiper-slide">
-                  <div class="news__preview preview-1"></div>
-						<div class="news__content">
-   <a class="news__content-date" href="#">12.04.2019</a>
-   <a class="news__content-title" href="#">
-      <h6>Центр поддержки экспорта, в студии Павел Тулба</h6>
-   </a>
-   <p class="news__content-text">
-      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...
-   </p>
-   <a class="news__content-btn" href="#">
-      <span>Читать</span>
-      <svg>
-         <use xlink:href='img/sprite.svg#news-arrow'></use>
-      </svg>
-   </a>
-</div>
-               </div>
-               <div class="news__slide swiper-slide">
-						<div class="video" data-src="https://www.youtube.com/embed/RAbzslym6o0?autoplay=1">
-   <div class="video__body">
-      <button class="video__button">
-         <svg>
-            <use xlink:href='img/sprite.svg#video-btn'></use>
-         </svg>
-      </button>
-   </div>
-</div>
-						<div class="news__content">
-   <a class="news__content-date" href="#">12.04.2019</a>
-   <a class="news__content-title" href="#">
-      <h6>Центр поддержки экспорта, в студии Павел Тулба</h6>
-   </a>
-   <p class="news__content-text">
-      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...
-   </p>
-   <a class="news__content-btn" href="#">
-      <span>Читать</span>
-      <svg>
-         <use xlink:href='img/sprite.svg#news-arrow'></use>
-      </svg>
-   </a>
-</div>
-               </div>
-               <div class="news__slide swiper-slide">
-                  <div class="news__preview preview-3"></div>
-						<div class="news__content">
-   <a class="news__content-date" href="#">12.04.2019</a>
-   <a class="news__content-title" href="#">
-      <h6>Центр поддержки экспорта, в студии Павел Тулба</h6>
-   </a>
-   <p class="news__content-text">
-      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...
-   </p>
-   <a class="news__content-btn" href="#">
-      <span>Читать</span>
-      <svg>
-         <use xlink:href='img/sprite.svg#news-arrow'></use>
-      </svg>
-   </a>
-</div>
-               </div>
-            </div>
-         </div>
-         <a class="news__button button-white" href="#">Смотреть все новости</a>
-      </div>
-   </div>
-</section>
-							<div class="all-events__video">
-								<div class="video" data-src="https://www.youtube.com/embed/RAbzslym6o0?autoplay=1">
-   <div class="container">
-      <div class="video__body">
-         <button class="video__button">
-            <svg>
-               <use xlink:href='img/sprite.svg#video-btn'></use>
-            </svg>
-         </button>
-         <h1 class="video-project__title">Проект UBHDP</h1>
-         <h3 class="video-project__sub-title">
-            Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту UBHDP за возможность получить консультацию от мировых специалистов!
-         </h3>
-      </div>
-   </div>
-</div>
-							</div>
-							<button class="all-events__button button-white">Посмотреть еще</button>
-						</div>
-					</div>
-				</section>
 
-			</main>
-			<!-- Додати клас background де потрібно -->
+							<div class="contact-form__checkbox all-conditions">
+								<input type="checkbox" id="checkbox-password">
+								<label for="checkbox-password">Я согласен с <a href="#">Условиями регистрации</a></label>
+							</div>
+							<button class="contact-form__submit button-green" type="submit">Продолжить</button>
+					</form>
+				</div>
+			</section>
+
+		</main>
+		<!-- Додати клас background де потрібно -->
 
 <footer class="footer background">
    <div class="footer__contact">
@@ -561,9 +604,10 @@
       </div>
    </div>
 </footer>
-		</div>
-		<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230606143527"></script> -->
+	</div>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230606143527"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?_v=20230606143527"></script>
 <script src="js/app.min.js?_v=20230606143527"></script>
-	</body>
+</body>
+
 </html>

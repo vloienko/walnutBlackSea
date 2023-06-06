@@ -4,9 +4,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230526155744"/>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css?_v=20230526155744"/>
-   <link rel="stylesheet" href="css/style.min.css?_v=20230526155744">
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230606143527"/> -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css?_v=20230606143527"/>
+   <link rel="stylesheet" href="css/style.min.css?_v=20230606143527">
    <title>Оптовым и корпоративным клиентам</title>
 </head>
 	<body>
@@ -115,9 +115,27 @@
                   <span>Ждем Вашего звонка ежедневно с 9 до 18</span>
                </div>
                <button class="header__basket">
-                  <svg>
+                  <svg> 
                      <use xlink:href='img/sprite.svg#basket'></use>
                   </svg>
+
+                  <div class="basket-popup">
+                     <p class="basket-popup__empty" data-cart-empty>
+                        Корзина пуста
+                     </p>
+                     <div class="basket-popup__box"></div>
+                     <div class="basket-popup__body">
+                        <div class="basket-popup__total">
+                           <span class="basket-popup__text">Всего</span>
+                           <div class="basket-popup__sum">
+                              <span class="basket-popup__num">0</span>
+                              <span class="basket-popup__currency">грн.</span>
+                           </div>
+                        </div>
+                        <a class="basket-popup__link button-green none" href="#">Перейти в корзину</a>
+                     </div>
+                  </div>
+                  
                </button>
             </div>
          </div>
@@ -206,6 +224,9 @@
       </div>
    </div>
 </header>
+
+
+
 
 			<main class="main">
 				<div class="breadcrumbs">
@@ -573,8 +594,8 @@
    </div>
 </footer>
 		</div>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230526155744"></script>
-<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?_v=20230526155744"></script>
-<script src="js/app.min.js?_v=20230526155744"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230606143527"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?_v=20230606143527"></script>
+<script src="js/app.min.js?_v=20230606143527"></script>
 	</body>
 </html>

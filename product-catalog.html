@@ -4,9 +4,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230526155744"/>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css?_v=20230526155744"/>
-   <link rel="stylesheet" href="css/style.min.css?_v=20230526155744">
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230606143527"/> -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css?_v=20230606143527"/>
+   <link rel="stylesheet" href="css/style.min.css?_v=20230606143527">
    <title>Сторінка</title>
 </head>
 
@@ -116,9 +116,27 @@
                   <span>Ждем Вашего звонка ежедневно с 9 до 18</span>
                </div>
                <button class="header__basket">
-                  <svg>
+                  <svg> 
                      <use xlink:href='img/sprite.svg#basket'></use>
                   </svg>
+
+                  <div class="basket-popup">
+                     <p class="basket-popup__empty" data-cart-empty>
+                        Корзина пуста
+                     </p>
+                     <div class="basket-popup__box"></div>
+                     <div class="basket-popup__body">
+                        <div class="basket-popup__total">
+                           <span class="basket-popup__text">Всего</span>
+                           <div class="basket-popup__sum">
+                              <span class="basket-popup__num">0</span>
+                              <span class="basket-popup__currency">грн.</span>
+                           </div>
+                        </div>
+                        <a class="basket-popup__link button-green none" href="#">Перейти в корзину</a>
+                     </div>
+                  </div>
+                  
                </button>
             </div>
          </div>
@@ -208,6 +226,9 @@
    </div>
 </header>
 
+
+
+
 		<main class="main">
 			<div class="breadcrumbs">
 				<div class="breadcrumbs__body">
@@ -284,7 +305,7 @@
 							<div class="shop__swiper catalog__swiper swiper">
    <div class="shop__wrapper catalog__wrapper swiper-wrapper">
       <div class="swiper-slide">
-			<div class="product">
+			<div class="product" data-id="01">
    <div class="product__content">
       <div class="product__sticker">
          <div class="product__sticker-box">
@@ -341,7 +362,7 @@
                </svg>
                <div class="product__box-wrap">
                   <p>Масса:</p>
-                  <span>40г.</span>
+                  <span class="product__box-weight">40г.</span>
                </div>
             </div>
             <div class="product__box">
@@ -358,16 +379,20 @@
       <div class="product__purchase">
          <div class="product__price">
             <p>Цена:</p>
-            <span class="product__price-new">19 <span>грн.</span></span>
+            <div class="product__price-new">
+               <span class="product__price-sum">19</span>
+               <span class="product__price-text">грн.</span>
+            </div>
             <span class="product__price-old">21 <span>грн.</span></span>
          </div>
-         <button class="product__btn">Купить</button>
+         <div class="items__current" data-counter>1</div>
+         <button class="product__btn" type="button" data-cart>Купить</button>
       </div>
    </div>
 </div>
       </div>
       <div class="swiper-slide">
-			<div class="product">
+			<div class="product" data-id="02">
    <div class="product__content">
       <div class="product__sticker">
          <div class="product__sticker-box">
@@ -424,7 +449,7 @@
                </svg>
                <div class="product__box-wrap">
                   <p>Масса:</p>
-                  <span>40г.</span>
+                  <span class="product__box-weight">40г.</span>
                </div>
             </div>
             <div class="product__box">
@@ -441,15 +466,20 @@
       <div class="product__purchase">
          <div class="product__price">
             <p>Цена:</p>
-            <span class="product__price-new"><span>от</span> 21 <span>грн.</span></span>
+            <div class="product__price-new">
+               <span class="product__price-text">от</span>
+               <span class="product__price-sum">21</span>
+               <span class="product__price-text">грн.</span>
+            </div>
          </div>
-         <button class="product__btn">Купить</button>
+         <div class="items__current" data-counter>1</div>
+         <button class="product__btn" type="button" data-cart>Купить</button>
       </div>
    </div>
 </div>
       </div>
       <div class="swiper-slide">
-			<div class="product">
+			<div class="product" data-id="03">
    <div class="product__content">
       <div class="product__swiper swiper">
          <div class="product__wrapper swiper-wrapper">
@@ -497,7 +527,7 @@
                </svg>
                <div class="product__box-wrap">
                   <p>Масса:</p>
-                  <span>40г.</span>
+                  <span class="product__box-weight">40г.</span>
                </div>
             </div>
             <div class="product__box">
@@ -514,9 +544,14 @@
       <div class="product__purchase">
          <div class="product__price">
             <p>Цена:</p>
-            <span class="product__price-new"><span>от</span> 21 <span>грн.</span></span>
+            <div class="product__price-new">
+               <span class="product__price-text">от</span>
+               <span class="product__price-sum">21</span>
+               <span class="product__price-text">грн.</span>
+            </div>
          </div>
-         <button class="product__btn">Купить</button>
+         <div class="items__current" data-counter>1</div>
+         <button class="product__btn" type="button" data-cart>Купить</button>
       </div>
    </div>
 </div>
@@ -539,7 +574,7 @@
 <div class="shop__swiper catalog__swiper swiper">
    <div class="shop__wrapper catalog__wrapper swiper-wrapper">
       <div class="swiper-slide">
-			<div class="product">
+			<div class="product" data-id="04">
    <div class="product__content">
       <div class="product__swiper swiper">
          <div class="product__wrapper swiper-wrapper">
@@ -587,7 +622,7 @@
                </svg>
                <div class="product__box-wrap">
                   <p>Масса:</p>
-                  <span>40г.</span>
+                  <span class="product__box-weight">40г.</span>
                </div>
             </div>
             <div class="product__box">
@@ -604,16 +639,20 @@
       <div class="product__purchase">
          <div class="product__price">
             <p>Цена:</p>
-            <span class="product__price-new">19 <span>грн.</span></span>
+            <div class="product__price-new">
+               <span class="product__price-sum">19</span>
+               <span class="product__price-text">грн.</span>
+            </div>
             <span class="product__price-old">21 <span>грн.</span></span>
          </div>
-         <button class="product__btn">Купить</button>
+         <div class="items__current" data-counter>1</div>
+         <button class="product__btn" type="button" data-cart>Купить</button>
       </div>
    </div>
 </div>
       </div>
       <div class="swiper-slide">
-         <div class="product">
+         <div class="product" data-id="04">
    <div class="product__content">
       <div class="product__swiper swiper">
          <div class="product__wrapper swiper-wrapper">
@@ -661,7 +700,7 @@
                </svg>
                <div class="product__box-wrap">
                   <p>Масса:</p>
-                  <span>40г.</span>
+                  <span class="product__box-weight">40г.</span>
                </div>
             </div>
             <div class="product__box">
@@ -678,16 +717,20 @@
       <div class="product__purchase">
          <div class="product__price">
             <p>Цена:</p>
-            <span class="product__price-new">19 <span>грн.</span></span>
+            <div class="product__price-new">
+               <span class="product__price-sum">19</span>
+               <span class="product__price-text">грн.</span>
+            </div>
             <span class="product__price-old">21 <span>грн.</span></span>
          </div>
-         <button class="product__btn">Купить</button>
+         <div class="items__current" data-counter>1</div>
+         <button class="product__btn" type="button" data-cart>Купить</button>
       </div>
    </div>
 </div>
       </div>
       <div class="swiper-slide">
-         <div class="product">
+         <div class="product" data-id="04">
    <div class="product__content">
       <div class="product__swiper swiper">
          <div class="product__wrapper swiper-wrapper">
@@ -735,7 +778,7 @@
                </svg>
                <div class="product__box-wrap">
                   <p>Масса:</p>
-                  <span>40г.</span>
+                  <span class="product__box-weight">40г.</span>
                </div>
             </div>
             <div class="product__box">
@@ -752,10 +795,14 @@
       <div class="product__purchase">
          <div class="product__price">
             <p>Цена:</p>
-            <span class="product__price-new">19 <span>грн.</span></span>
+            <div class="product__price-new">
+               <span class="product__price-sum">19</span>
+               <span class="product__price-text">грн.</span>
+            </div>
             <span class="product__price-old">21 <span>грн.</span></span>
          </div>
-         <button class="product__btn">Купить</button>
+         <div class="items__current" data-counter>1</div>
+         <button class="product__btn" type="button" data-cart>Купить</button>
       </div>
    </div>
 </div>
@@ -972,9 +1019,9 @@
    </div>
 </footer>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230526155744"></script>
-<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?_v=20230526155744"></script>
-<script src="js/app.min.js?_v=20230526155744"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230606143527"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?_v=20230606143527"></script>
+<script src="js/app.min.js?_v=20230606143527"></script>
 </body>
 
 </html>
